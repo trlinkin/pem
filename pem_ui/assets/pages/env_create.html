@@ -69,7 +69,7 @@
                     class="form-control" 
                     ng-model="Version">
                     <option value="">Select a version to deploy...</option>
-                    <option ng-repeat="(v,m) in mod_versions" value="{{v}}">{{v}}</option>
+                    <option ng-repeat="v in mod_versions" value="{{v}}">{{v}}</option>
                 </select>
             </td>
             <td><button ng-show="Version" class="btn btn-default" ng-click="Add()">Add</button></td>
