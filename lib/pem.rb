@@ -108,11 +108,11 @@ class Pem
           deploy_uploaded_module(name,version,tardir,data[file])
           data['source'] ||= "N/A"
         end
-      end
 
-        File.open("#{moddir}/.pemversion", 'w+') do |file|
+        File.open("#{tardir}/.pemversion", 'w+') do |file|
           file.write({ 'type' => data['type'], 'source' =>  ['source']}.to_yaml)
         end
+      end
     rescue StandardError => err
       Pem.log_error(err, @logger)
       raise(err)
