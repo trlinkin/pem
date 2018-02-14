@@ -43,7 +43,7 @@
                   class="btn btn-default" role="button" ng-show="!modifymod[name+n]">{{ v }}</a>
               <select ng-init"newversion[name+n] = v" class="form-control" ng-model="newversion[name+n]" ng-show="modifymod[name+n]" >
                 <option value="">Current Version Is {{v}}</option>
-                <option ng-repeat="(v,m) in allmodules[n]" value="{{v}}">{{v}}</option>
+                <option ng-repeat="v in Object.keys(allmodules[n])" value="{{v}}">{{v}}</option>
               </select>
               <span class="input-group-btn">
               <button ng-disabled="!newversion[name+n]" ng-show="modifymod[name+n]" class="btn btn-success btn-sm" ng-click="updateEnvMod(name,n,newversion[name+n])">Update</button>
