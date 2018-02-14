@@ -194,7 +194,7 @@ th {
   opacity: 0.3;
 }
 
-#deets-title {
+.deets-title {
   clear: left;
   margin-right: 10px;
   color: #666;
