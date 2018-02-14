@@ -194,15 +194,18 @@ th {
   opacity: 0.3;
 }
 
-dl dt {
+dd dt {
   clear: left;
   margin-right: 4px;
   color: #666;
-  color: #444;
   font-size: 13px;
   display: block;
   float: left;
   margin: 6px 0 0;
+}
+
+dd {
+  margin-left: 15px;
 }
 
 dt {
