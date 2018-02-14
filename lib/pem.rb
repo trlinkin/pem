@@ -110,7 +110,7 @@ class Pem
         end
 
         File.open("#{tardir}/.pemversion", 'w+') do |file|
-          file.write({ 'type' => data['type'], 'source' =>  ['source']}.to_yaml)
+          file.write({ 'type' => data['type'], 'source' => data['source']}.to_yaml)
         end
       end
     rescue StandardError => err
